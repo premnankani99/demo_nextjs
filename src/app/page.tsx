@@ -1,66 +1,53 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Philosophy from "./components/Philosophy";
+import Gallery from "./components/Gallery";
+import Services from "./components/Services";
+import BeforeAfterSlider from "./components/BeforeAfterSlider";
+import VibeQuiz from "./components/VibeQuiz";
+import Testimonials from "./components/Testimonials";
+import BookingForm from "./components/BookingForm";
+import Footer from "./components/Footer";
+import WhatsAppFloating from "./components/WhatsAppFloating";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      {/* Floating Header */}
+      <Navbar />
+
+      {/* Main Experience Layout */}
+      <main>
+        {/* Parallax Hero section */}
+        <Hero />
+
+        {/* Brand Philosophy & Pillars */}
+        <Philosophy />
+
+        {/* DEDICATED VISUAL GALLERY GRID (All 6 physical salon images) */}
+        <Gallery />
+
+        {/* CURATED SERVICES TAB GRID */}
+        <Services />
+
+        {/* BEFORE & AFTER Restorative Visualizer */}
+        <BeforeAfterSlider />
+
+        {/* Dynamic VIBE-MATCH Quiz finder */}
+        <VibeQuiz />
+
+        {/* Real Google Maps reviews slider */}
+        <Testimonials />
+
+        {/* Premium Reservation Form Panel */}
+        <BookingForm />
       </main>
-    </div>
+
+      {/* Footer & Live Maps location */}
+      <Footer />
+
+      {/* Pulsing Floating WhatsApp support hotline */}
+      <WhatsAppFloating />
+    </>
   );
 }

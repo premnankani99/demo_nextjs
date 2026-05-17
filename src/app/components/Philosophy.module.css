@@ -1,0 +1,236 @@
+.section {
+  padding: 10rem 2rem;
+  background: var(--bg-philosophy); /* Clean white background */
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.4s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+/* Visual Column: Asymmetric Rectangular Polaroid Frames */
+.visualColumn {
+  position: relative;
+}
+
+.spacesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.cardFrame {
+  background: var(--bg-card); /* Pure white card background */
+  border: 1px solid var(--border-color);
+  padding: 1.2rem;
+  border-radius: 8px; /* Original clean rectangular rounding */
+  box-shadow: 0 15px 40px rgba(122, 114, 103, 0.04);
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  transition: var(--transition-smooth);
+}
+
+.cardFrame:nth-child(2) {
+  margin-left: auto;
+  margin-top: -2rem;
+  z-index: 3;
+}
+
+.cardFrame:hover {
+  transform: translateY(-6px);
+  border-color: var(--teal-primary);
+  box-shadow: 0 25px 50px rgba(122, 114, 103, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cardFrame:hover .image {
+  transform: scale(1.05);
+}
+
+.captionCard {
+  position: absolute;
+  bottom: 2.2rem;
+  right: -1.5rem;
+  padding: 0.85rem 1.15rem;
+  box-shadow: 0 10px 25px rgba(122, 114, 103, 0.08);
+  max-width: 220px;
+  border-radius: 6px;
+  z-index: 5;
+}
+
+.captionTag {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: var(--teal-primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.captionText {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--text-dark);
+}
+
+/* Right Copy Column: Value Propositions */
+.copyColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--teal-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 1.8rem;
+  letter-spacing: -0.01em;
+}
+
+.introParagraph {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* Beautiful Checklist Grid */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.checkItem {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.checkIcon {
+  background: var(--teal-light);
+  color: var(--teal-primary);
+  border-radius: 50%;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  transition: var(--transition-smooth);
+}
+
+.checkItem:hover .checkIcon {
+  transform: scale(1.1);
+  background: var(--teal-primary);
+  color: #FFFFFF;
+}
+
+.checkContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.checkContent h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.checkContent p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+  
+  .cardFrame:nth-child(2) {
+    margin-top: 0;
+  }
+  
+  .spacesGrid {
+    gap: 3rem;
+  }
+  
+  .copyColumn {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .imageWrapper {
+    height: 240px;
+  }
+  
+  .section {
+    padding: 6rem 1rem;
+  }
+  
+  .captionCard {
+    right: 0.5rem;
+    bottom: -1rem;
+    max-width: 180px;
+    padding: 0.8rem;
+  }
+  
+  .captionText {
+    font-size: 0.8rem;
+  }
+  
+  .cardFrame:nth-child(2) {
+    margin-left: 0;
+  }
+}

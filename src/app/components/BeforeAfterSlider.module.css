@@ -1,0 +1,196 @@
+.section {
+  padding: 10rem 2rem;
+  background: var(--bg-card); /* Pure white background for gallery */
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 5rem auto;
+}
+
+.subtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--teal-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Slider Canvas */
+.sliderCanvas {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  user-select: none;
+  cursor: ew-resize;
+  border-radius: 4px;
+  box-shadow: 0 25px 60px rgba(122, 114, 103, 0.08);
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Before overlapping panel */
+.beforeContainer {
+  width: var(--slider-pos);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.beforeImgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--container-width);
+}
+
+/* Gray filter to simulate dull/damaged hair */
+.beforeImage {
+  filter: grayscale(0.9) contrast(1.15) brightness(0.95);
+}
+
+/* Vertical divider bar */
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--slider-pos);
+  width: 2px;
+  background: var(--teal-primary);
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Center handle circle */
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--teal-primary);
+  color: var(--teal-primary);
+  box-shadow: 0 8px 20px rgba(0, 130, 138, 0.15);
+  cursor: grab;
+  pointer-events: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 130, 138, 0.25);
+  background: #FFFFFF;
+}
+
+.handle svg {
+  color: var(--teal-primary);
+}
+
+/* Badges styling */
+.badge {
+  position: absolute;
+  top: 1.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  z-index: 5;
+  border-radius: 2px;
+}
+
+.afterBadge {
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.beforeBadge {
+  left: 1.5rem;
+  background: rgba(39, 37, 34, 0.9);
+  color: #FFFFFF;
+}
+
+/* Tips row */
+.tipRow {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--teal-primary);
+}
+
+@media (max-width: 768px) {
+  .sliderCanvas {
+    height: 380px;
+  }
+  
+  .badge {
+    top: 1rem;
+    font-size: 0.58rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .afterBadge {
+    right: 1rem;
+  }
+  
+  .beforeBadge {
+    left: 1rem;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .section {
+    padding: 6rem 1rem;
+  }
+}

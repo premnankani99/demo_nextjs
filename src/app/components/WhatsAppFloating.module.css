@@ -1,0 +1,68 @@
+.floatBtn {
+  position: fixed;
+  bottom: 2.2rem;
+  right: 2.2rem;
+  z-index: 1005;
+  background: #25D366; /* Official WhatsApp green */
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.floatBtn:hover {
+  transform: scale(1.08) translateY(-4px);
+  background: #20BA5A;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+.icon {
+  fill: #FFFFFF;
+  stroke: #25D366;
+}
+
+/* Floating tooltip bubble sliding from left */
+.tooltip {
+  position: absolute;
+  right: 4.8rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(15px);
+  background: var(--text-dark);
+  color: #FFFFFF;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tooltipVisible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 600px) {
+  .floatBtn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .tooltip {
+    display: none; /* Hide tooltips on small mobile screens to prevent clutter */
+  }
+}

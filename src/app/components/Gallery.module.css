@@ -1,0 +1,168 @@
+.section {
+  padding: 10rem 2rem;
+  background: var(--bg-gallery); /* Curated champagne gold backdrop */
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.4s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 5.5rem auto;
+}
+
+.subtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--teal-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Polaroid Asymmetric Masonry Grid */
+.masonryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.polaroidCard {
+  background: var(--bg-card); /* Pure white card background */
+  border: 1px solid var(--border-color);
+  padding: 1.2rem;
+  border-radius: 8px; /* Original clean rectangular rounding */
+  box-shadow: 0 15px 40px rgba(122, 114, 103, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.polaroidCard:hover {
+  transform: translateY(-6px);
+  border-color: var(--teal-primary);
+  box-shadow: 0 25px 60px rgba(122, 114, 103, 0.09);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 4px; /* Clean rectangular corners */
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.polaroidCard:hover .image {
+  transform: scale(1.05);
+}
+
+/* Polaroid Badge Overlay */
+.itemTag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--teal-gradient);
+  color: #FFFFFF;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px; /* Rectangular badge */
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 130, 138, 0.15);
+}
+
+/* Polaroid Details Block */
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.cardDesc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Asymmetric heights on desktop for standard masonry feel */
+@media (min-width: 1025px) {
+  .masonryGrid > div:nth-child(2) {
+    transform: translateY(1.5rem);
+  }
+  .masonryGrid > div:nth-child(2):hover {
+    transform: translateY(0.8rem);
+  }
+  
+  .masonryGrid > div:nth-child(5) {
+    transform: translateY(1.5rem);
+  }
+  .masonryGrid > div:nth-child(5):hover {
+    transform: translateY(0.8rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .masonryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonryGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .section {
+    padding: 6rem 1rem;
+  }
+  
+  .imageWrapper {
+    height: 240px;
+  }
+}
