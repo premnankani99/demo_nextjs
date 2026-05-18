@@ -431,43 +431,84 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+  
   .formWrapper {
-    padding: 2.5rem 2rem;
+    padding: 1.8rem 1.2rem;
   }
   
   .formTitle {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form {
+    gap: 1.2rem;
   }
   
   .formRow {
     grid-template-columns: 1fr;
-    gap: 1.8rem;
+    gap: 1.2rem;
+  }
+  
+  .formGroup {
+    gap: 0.4rem;
+  }
+  
+  .formGroup input,
+  .formGroup select {
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .slotsGrid {
+    gap: 0.5rem;
+  }
+  
+  .slotBtn {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.68rem;
   }
   
   .studioCard {
-    padding: 2.5rem 2rem;
+    padding: 1.8rem 1.2rem;
+    gap: 1.8rem;
+  }
+  
+  .studioCardTitle {
+    font-size: 1.5rem;
+  }
+  
+  .contactList {
+    gap: 1.5rem;
+  }
+  
+  .contactItem {
+    gap: 0.8rem;
+  }
+  
+  .directCall,
+  .whatsappFormLink {
+    font-size: 1.3rem;
   }
   
   .ticketTop {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   
   .ticketBody {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   
   .ticketGrid {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 1rem;
   }
   
   .ticketValue {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 600px) {
-  .section {
-    padding: 6rem 1rem;
-  }
-}
