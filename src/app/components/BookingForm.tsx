@@ -39,8 +39,10 @@ export default function BookingForm() {
       setFormData(prev => ({ ...prev, service: "nails-extensions" }));
     } else if (name.includes("Haircut") || name.includes("Cut")) {
       setFormData(prev => ({ ...prev, service: "hair-cut" }));
-    } else if (name.includes("Pedicure")) {
+    } else if (name.includes("Pedicure") || name.includes("Spa")) {
       setFormData(prev => ({ ...prev, service: "spa-pedicure" }));
+    } else if (name.includes("Bridal") || name.includes("Makeup") || name.includes("Haldi")) {
+      setFormData(prev => ({ ...prev, service: "bridal-makeup" }));
     }
   };
 
@@ -70,7 +72,9 @@ export default function BookingForm() {
       case "hair-cut": return "Signature Haircut & Style";
       case "hair-color": return "Caramel Balayage / Color Melt";
       case "spa-pedicure": return "Pedicure Heaven (10-Step)";
-      case "spa-massage": return "Botanical Stress-Relief Therapy";
+      case "spa-massage": return "Ayurvedic Stress-Relief Therapy";
+      case "bridal-makeup": return "Signature HD Bridal Makeup";
+      case "bridal-haldi": return "Haldi / Mehendi Event Look";
       default: return "Couture Treatment";
     }
   };
@@ -114,7 +118,7 @@ export default function BookingForm() {
   };
 
   return (
-    <section id="booking" className={styles.section}>
+    <section id="booking" className={`${styles.section} reveal-section`}>
       <div className={styles.container}>
         {!bookingSuccess ? (
           <>
@@ -169,7 +173,9 @@ export default function BookingForm() {
                         <option value="hair-cut">Signature Haircut & Style</option>
                         <option value="hair-color">Caramel Balayage / Color Melt</option>
                         <option value="spa-pedicure">Pedicure Heaven (10-Step)</option>
-                        <option value="spa-massage">Botanical Stress-Relief Therapy</option>
+                        <option value="spa-massage">Ayurvedic Stress-Relief Therapy</option>
+                        <option value="bridal-makeup">Signature HD Bridal Makeup</option>
+                        <option value="bridal-haldi">Haldi / Mehendi Event Look</option>
                       </select>
                     </div>
 
@@ -245,13 +251,13 @@ export default function BookingForm() {
                       </svg>
                       <div>
                         <h5>Working Hours</h5>
-                        <p>Open Daily: 9:30 AM Ã¢â‚¬â€œ 8:30 PM (Sundays Busy)</p>
+                        <p>Open Daily: 9:30 AM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ 8:30 PM (Sundays Busy)</p>
                       </div>
                     </div>
                   </div>
 
                   <div className={styles.cardFooter}>
-                    <span>Luxe Beauty Studio Ã¢â‚¬Â¢ Downtown Metro</span>
+                    <span>Luxe Beauty Studio ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ Lajpat Nagar, Delhi</span>
                   </div>
                 </div>
               </div>
@@ -269,7 +275,7 @@ export default function BookingForm() {
               <h3 className={styles.successTitle}>Reservation Requested</h3>
               <p className={styles.successSubtitle}>
                 Your styling experience request has been received. Present this digital ticket 
-                at our Downtown Metro salon reception.
+                at our Lajpat Nagar, Delhi salon reception.
               </p>
             </div>
 
@@ -323,7 +329,7 @@ export default function BookingForm() {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
-                  <span>Downtown Metro</span>
+                  <span>Lajpat Nagar, Delhi</span>
                 </div>
               </div>
             </div>

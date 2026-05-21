@@ -21,34 +21,35 @@ export default function Services() {
   const categories = [
     { id: "nails", label: "Nails & Artistry" },
     { id: "hair", label: "Hair & Couture" },
-    { id: "spa", label: "Sensory Spa" }
+    { id: "spa", label: "Sensory Spa" },
+    { id: "bridal", label: "Bridal & Occasion" }
   ];
 
   const servicesData: CategoryMap = {
     nails: [
       {
         name: "Couture Gel Extensions",
-        price: "â‚¹1,999",
+        price: "Ã¢â€šÂ¹1,999",
         duration: "120 Mins",
         description: "Full-set premium hard gel extensions crafted by Sophia. Choice of classic length, customized shaping, and a glossy, warp-free protective topcoat.",
         tag: "Highly Popular"
       },
       {
         name: "Custom Ombre & Glaze Overlays",
-        price: "â‚¹1,499",
+        price: "Ã¢â€šÂ¹1,499",
         duration: "90 Mins",
         description: "Elegant pastel blends, milky white ombres, and chrome powders hand-rubbed for a high-gloss glazed donut luster.",
         tag: "Trending"
       },
       {
         name: "Signature French Overlay",
-        price: "â‚¹1,299",
+        price: "Ã¢â€šÂ¹1,299",
         duration: "75 Mins",
         description: "Crisp white tips or soft pastel smiles over organic structural gel. A timeless look that lasts up to 4 weeks.",
       },
       {
         name: "Handpainted Art & Rhinestones",
-        price: "â‚¹799",
+        price: "Ã¢â€šÂ¹799",
         duration: "45 Mins",
         description: "Detailed handpainted line art, abstract swirls, chrome accents, or 4 signature Swarovski crystals on custom accent nails.",
       }
@@ -56,27 +57,27 @@ export default function Services() {
     hair: [
       {
         name: "Signature Precision Cut & Blowout",
-        price: "â‚¹999",
+        price: "Ã¢â€šÂ¹999",
         duration: "60 Mins",
         description: "A tailored consultation followed by a precision haircut with master stylist Alex. Includes a relaxing stress-relief wash and a signature blowout.",
         tag: "Alex's Specialty"
       },
       {
         name: "Caramel Balayage & Color Melt",
-        price: "â‚¹3,499",
+        price: "Ã¢â€šÂ¹3,499",
         duration: "180 Mins",
         description: "Bespoke handpainted lighteners melted into a glossy caramel chocolate gloss. Restores hydration and leaves hair incredibly shiny.",
         tag: "Signature Service"
       },
       {
         name: "Rejuvenating Keratin Infusion",
-        price: "â‚¹2,999",
+        price: "Ã¢â€šÂ¹2,999",
         duration: "120 Mins",
         description: "Clinical-grade smoothing therapy designed to eliminate frizz and seal layers with botanical proteins. Lasts up to 3 months.",
       },
       {
         name: "Botanical Stress-Relief Scalp Ritual",
-        price: "â‚¹1,499",
+        price: "Ã¢â€šÂ¹1,499",
         duration: "90 Mins",
         description: "Alex's deep-conditioning therapy using organic oils, steam infusion, and a 20-minute relaxing scalp, neck, and shoulder massage.",
       }
@@ -90,22 +91,50 @@ export default function Services() {
         tag: "Heavenly Experience"
       },
       {
-        name: "Botanical Stress-Relief Therapy",
+        name: "Ayurvedic Stress-Relief Therapy",
         price: "â‚¹1,299",
         duration: "60 Mins",
         description: "A concentrated back, neck, and shoulder massage using warm organic herbal oils, targeting deep muscle stress.",
       },
       {
-        name: "Brightening Botanical Facial",
+        name: "Kesar-Chandan Brightening Facial",
         price: "â‚¹1,999",
         duration: "75 Mins",
-        description: "A customized facial using pure fruit enzymes, deep steam extraction, and a calming chilled rosewater hydration masque.",
+        description: "A customized facial using pure fruit enzymes, deep steam extraction, and a calming chilled rosewater and sandalwood hydration masque.",
       },
       {
-        name: "Rose Petal Mani-Pedi Duo",
+        name: "Haldi & Ubtan Glow Ritual",
         price: "â‚¹2,499",
         duration: "120 Mins",
-        description: "A double ritual beginning with a warm milk soak, organic sugar exfoliation, fresh rose petals, and detailed nail grooming.",
+        description: "A traditional full-body brightening ritual using turmeric, sandalwood, and gram flour for a flawless bridal glow.",
+      }
+    ],
+    bridal: [
+      {
+        name: "Signature HD Bridal Makeup",
+        price: "â‚¹15,999",
+        duration: "180 Mins",
+        description: "Flawless HD makeup tailored for Indian brides, complete with luxury lashes, advanced contouring, and long-lasting finish.",
+        tag: "Most Requested"
+      },
+      {
+        name: "Haldi / Mehendi Event Look",
+        price: "â‚¹7,999",
+        duration: "120 Mins",
+        description: "A fresh, dewy, and colorful makeup look perfect for daytime wedding festivities. Includes simple hair styling.",
+      },
+      {
+        name: "Pre-Bridal Complete Package",
+        price: "â‚¹12,499",
+        duration: "3 Days",
+        description: "Full body polishing, advanced facial, waxing, spa mani-pedi, and a relaxing massage to prep you for your big day.",
+        tag: "Value Package"
+      },
+      {
+        name: "Saree Draping & Hair Styling",
+        price: "â‚¹2,499",
+        duration: "90 Mins",
+        description: "Professional traditional or modern saree draping paired with a floral bun, elegant braid, or bouncy curls.",
       }
     ]
   };
@@ -123,7 +152,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className={styles.section}>
+    <section id="services" className={`${styles.section} reveal-section`}>
       <div className={styles.container}>
         {/* Title */}
         <div className={styles.header}>

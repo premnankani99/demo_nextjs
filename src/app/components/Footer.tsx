@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} reveal-section`}>
       <div className={styles.container}>
         
         {/* Left Column: Brand Statement & Map */}
@@ -14,7 +14,7 @@ export default function Footer() {
             <span className={styles.logoSub}>BEAUTY STUDIO</span>
           </div>
           <p className={styles.brandDesc}>
-            MetropolisÃ¢â‚¬â„¢s premier beauty studio offering couture hair design, impeccable nail extensions, 
+            New DelhiÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s premier beauty studio offering couture hair design, impeccable nail extensions, 
             and restorative luxury treatments. We craft personalized ceremonies of self-care.
           </p>
 
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className={styles.contactItem}>
             <span className={styles.contactLabel}>DAILY HOURS</span>
-            <p className={styles.contactText}>9:30 AM Ã¢â‚¬â€œ 8:30 PM (Daily)</p>
+            <p className={styles.contactText}>9:30 AM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ 8:30 PM (Daily)</p>
           </div>
         </div>
 
@@ -50,9 +50,9 @@ export default function Footer() {
       {/* Copyright Bar */}
       <div className={styles.copyrightBar}>
         <div className={styles.copyrightContainer}>
-          <p>Ã‚Â© {new Date().getFullYear()} Luxe Beauty Studio. All Rights Reserved.</p>
+          <p>ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© {new Date().getFullYear()} Luxe Beauty Studio. All Rights Reserved.</p>
           <p className={styles.designerCredit}>
-            Designed with <span className={styles.heart}>Ã¢â„¢Â¥</span> for luxury & prestige
+            Designed with <span className={styles.heart}>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢Ãƒâ€šÃ‚Â¥</span> for luxury & prestige
           </p>
         </div>
       </div>

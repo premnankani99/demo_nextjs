@@ -7,24 +7,24 @@
   --bg-card-hover: #F8F5EE; /* Light sand/beige */
   
   /* Curated Section Colorful Backgrounds */
-  --bg-hero: #FDF5EC; /* Sun-kissed Apricot Peach tint */
+  --bg-hero: #FDF2F4; /* Soft blush tint */
   --bg-philosophy: #FFFFFF; /* Clean white */
-  --bg-services: #EAF5F5; /* Soft seafoam teal-mint tint */
+  --bg-services: #F9EBEA; /* Soft rose tint */
   --bg-gallery: #FAF4ED; /* Warm champagne gold tint */
   --bg-slider: #FFFFFF; /* Clean white */
   --bg-quiz: #FCF5EE; /* Apricot blush tint */
   --bg-testimonials: #FFFFFF; /* Clean white */
-  --bg-booking: #EAF5F5; /* Soft seafoam teal-mint tint */
-  --bg-footer: #0A2E33; /* Rich deep slate-teal, highly colorful grounding anchor */
+  --bg-booking: #F9EBEA; /* Soft rose tint */
+  --bg-footer: #2E0611; /* Rich deep maroon/wine anchor for bridal theme */
   
   --text-dark: #272522; /* Chic warm charcoal-chocolate */
   --text-muted: #7A7267; /* Soft muted taupe/grey */
   
   /* Primary Accent: Elegant Turquoise Teal representing their physical reception desk */
-  --teal-primary: #00828A; 
-  --teal-light: #E5F6F6;
-  --teal-dark: #005F66;
-  --teal-gradient: linear-gradient(135deg, #00A3AD 0%, #00828A 50%, #005F66 100%);
+  --teal-primary: #9F1239; 
+  --teal-light: #FFE4E6;
+  --teal-dark: #881337;
+  --teal-gradient: linear-gradient(135deg, #E11D48 0%, #9F1239 50%, #4C0519 100%);
   
   /* Secondary Accent: Sunset Rose/Coral for colorful contrast */
   --rose-accent: #E11D48;
@@ -37,7 +37,7 @@
   --gold-gradient: linear-gradient(135deg, #DFBA73 0%, #C5A059 100%);
   
   --border-color: #ECE8E0;
-  --border-color-active: #00828A;
+  --border-color-active: #9F1239;
   
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Montserrat', sans-serif;
@@ -110,9 +110,14 @@ html, body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border-radius: 4px; /* Back to original sleek minimal shape */
-  box-shadow: 0 4px 15px rgba(0, 130, 138, 0.15);
+  border-radius: 30px; /* Elegant pill shape for creative look */
+  box-shadow: 0 4px 15px rgba(225, 29, 72, 0.25);
+  animation: button-pulse 2s infinite alternate;
 }
+
+@keyframes button-pulse {
+  0% { box-shadow: 0 4px 15px rgba(225, 29, 72, 0.15); transform: scale(1); }
+  100% { box-shadow: 0 4px 25px rgba(225, 29, 72, 0.4); transform: scale(1.02); }
 
 .gold-button::before {
   content: '';
@@ -136,8 +141,8 @@ html, body {
 
 .gold-button:hover {
   color: #FFFFFF;
-  box-shadow: 0 10px 25px rgba(0, 130, 138, 0.3);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(225, 29, 72, 0.5);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .secondary-button {
@@ -205,11 +210,11 @@ html, body {
 
 /* Dynamic Interactive Theme Classes */
 html.theme-teal {
-  --teal-primary: #00828A;
-  --teal-light: #E5F6F6;
-  --teal-dark: #005F66;
-  --teal-gradient: linear-gradient(135deg, #00A3AD 0%, #00828A 50%, #005F66 100%);
-  --border-color-active: #00828A;
+  --teal-primary: #9F1239;
+  --teal-light: #FFE4E6;
+  --teal-dark: #881337;
+  --teal-gradient: linear-gradient(135deg, #E11D48 0%, #9F1239 50%, #4C0519 100%);
+  --border-color-active: #9F1239;
 }
 
 html.theme-gold {
@@ -234,4 +239,80 @@ html.theme-mint {
   --teal-dark: #0F766E;
   --teal-gradient: linear-gradient(135deg, #2DD4BF 0%, #0D9488 100%);
   --border-color-active: #0D9488;
+}
+
+/* ======== NEW PREMIUM ANIMATIONS & EFFECTS ======== */
+
+/* Card Hover 3D Float Effect */
+.glass-panel {
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-panel:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(225, 29, 72, 0.12), 0 5px 15px rgba(0,0,0,0.05);
+  border-color: rgba(225, 29, 72, 0.3);
+}
+
+/* Image Slow Zoom on Hover (For Gallery/Hero) */
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.imageWrapper img {
+  transition: transform 0.8s ease;
+}
+.imageWrapper:hover img {
+  transform: scale(1.08);
+}
+
+/* Floating Elements Animation */
+@keyframes slow-float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-slow {
+  animation: slow-float 8s ease-in-out infinite;
+}
+
+/* Shimmer Effect for Gold Text/Badges */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-text, .gold-badge {
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Mobile Friendly Touches */
+@media (max-width: 768px) {
+  .glass-panel:hover {
+    transform: translateY(-4px) scale(1.01); /* Reduced motion for mobile */
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  .menuGrid, .masonryGrid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+/* ======== SCROLL REVEAL ANIMATIONS ======== */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

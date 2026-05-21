@@ -57,7 +57,7 @@ export default function Philosophy() {
           
           <p className={styles.introParagraph}>
             At Luxe Beauty Studio, we believe self-care is a sacred ceremony, not a checklist. 
-            Located in the heart of Downtown Metro, our boutique space is bathed in warm, airy 
+            Located in the heart of Lajpat Nagar, Delhi, our boutique space is bathed in warm, airy 
             light and tailored to offer a peaceful detach from the city's busy noise.
           </p>
           

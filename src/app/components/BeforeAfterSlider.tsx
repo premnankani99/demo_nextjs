@@ -66,7 +66,7 @@ export default function BeforeAfterSlider() {
   }, []);
 
   return (
-    <section id="transformations" className={styles.section}>
+    <section id="transformations" className={`${styles.section} reveal-section`}>
       <div className={styles.container}>
         {/* Header Block */}
         <div className={styles.header}>
@@ -129,7 +129,7 @@ export default function BeforeAfterSlider() {
 
         {/* Dynamic Instructional Pill */}
         <div className={styles.tipRow}>
-          <span>ÃƒÂ¢Ã¢â‚¬Â Ã‚Â DRAG TO VISUALIZE ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</span>
+          <span>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â DRAG TO VISUALIZE ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢</span>
         </div>
       </div>
     </section>

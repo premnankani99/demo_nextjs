@@ -58,14 +58,14 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className={styles.section}>
+    <section id="gallery" className={`${styles.section} reveal-section`}>
       <div className={styles.container}>
         {/* Header Block */}
         <div className={styles.header}>
           <span className={styles.subtitle}>STUDIO GALLERY & WORK</span>
           <h2 className={styles.title}>Visualizing the <span className="gold-text">Prestige</span></h2>
           <p className={styles.description}>
-            A curated lookbook showcasing our clinical, sun-drenched Downtown Metro interiors and the 
+            A curated lookbook showcasing our clinical, sun-drenched Lajpat Nagar, Delhi interiors and the 
             exquisite hair, nail, and pedicure treatments crafted by our resident artists.
           </p>
         </div>

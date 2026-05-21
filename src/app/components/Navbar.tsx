@@ -7,10 +7,10 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Apply default bright teal theme class
+  // Apply default bright rose theme class for bridal vibe
   useEffect(() => {
     document.documentElement.className = "";
-    document.documentElement.classList.add("theme-teal");
+    document.documentElement.classList.add("theme-rose");
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
