@@ -10,7 +10,7 @@ export default function Hero() {
         {/* Left Column: Spacious Editorial Content */}
         <div className={`${styles.textContent} fade-in`}>
           <div className={styles.taglineRow}>
-            <span className={styles.goldBadge}>SIT BEAUTY STUDIO • RAJA PARK, JAIPUR</span>
+            <span className={styles.goldBadge}>Luxe Beauty Studio â€¢ Downtown Metro</span>
           </div>
           
           <h1 className={styles.title}>
@@ -20,9 +20,9 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Welcome to Jaipur’s sun-drenched sanctuary for boutique hair couture, 
+            Welcome to Metropolisâ€™s sun-drenched sanctuary for boutique hair couture, 
             flawless custom nail extensions, and deeply restorative spa rituals. 
-            An award-winning 4.8★ standard of absolute perfection.
+            An award-winning 4.8â˜… standard of absolute perfection.
           </p>
 
           <div className={styles.ctas}>
@@ -37,8 +37,8 @@ export default function Hero() {
           {/* Clean Trust Card */}
           <div className={styles.trustRow}>
             <div className={styles.starCol}>
-              {"★".repeat(5).split("").map((star, idx) => (
-                <span key={idx} className={styles.star}>★</span>
+              {"â˜…".repeat(5).split("").map((star, idx) => (
+                <span key={idx} className={styles.star}>â˜…</span>
               ))}
             </div>
             <div className={styles.trustText}>
@@ -52,7 +52,7 @@ export default function Hero() {
           <div className={styles.imageWrapper}>
             <Image 
               src="/images/homepic.png" 
-              alt="SIT Beauty Studio Teal Reception Lobby" 
+              alt="Luxe Beauty Studio Teal Reception Lobby" 
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"

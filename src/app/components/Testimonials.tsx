@@ -29,15 +29,15 @@ export default function Testimonials() {
       name: "Akshat",
       role: "Verified Google Customer",
       rating: 5,
-      text: "Humble and expert staff experience. Ajay is exceptionally professional at his work. He gave me the most relaxing back massage, a perfect hair trim, and a great haircut. Really enjoyed my visit!",
+      text: "Humble and expert staff experience. Alex is exceptionally professional at his work. He gave me the most relaxing back massage, a perfect hair trim, and a great haircut. Really enjoyed my visit!",
       time: "3 months ago",
       avatarText: "A"
     },
     {
-      name: "Nandini J. (via Peace M)",
+      name: "Sophia J. (via Peace M)",
       role: "Wedding Guest Reviewer",
       rating: 5,
-      text: "Had a great experience with nail extensions. Nandini provided excellent service and did a very neat and beautiful job. The salon is clean and hygienic, and the staff is well trained and professional. Highly recommended!",
+      text: "Had a great experience with nail extensions. Sophia provided excellent service and did a very neat and beautiful job. The salon is clean and hygienic, and the staff is well trained and professional. Highly recommended!",
       time: "3 months ago",
       avatarText: "NJ"
     }
@@ -75,15 +75,15 @@ export default function Testimonials() {
           <span className={styles.subtitle}>GUEST VOICES</span>
           <h2 className={styles.title}>Beloved by Our <span className="gold-text">Guests</span></h2>
           <p className={styles.description}>
-            With an overall rating of 4.8★ and over 379 detailed reviews, we pride ourselves on 
-            creating memorable luxury experiences for every guest in Jaipur.
+            With an overall rating of 4.8ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ and over 379 detailed reviews, we pride ourselves on 
+            creating memorable luxury experiences for every guest in Metropolis.
           </p>
         </div>
 
         {/* Carousel Window */}
         <div className={`${styles.carouselWrapper} glass-panel`}>
           {/* Giant decorative quotation mark */}
-          <div className={styles.quoteIcon}>“</div>
+          <div className={styles.quoteIcon}>ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ</div>
 
           {/* Cards Frame */}
           <div className={styles.carouselTrack}>
@@ -94,14 +94,14 @@ export default function Testimonials() {
               >
                 {/* 5-Star Row */}
                 <div className={styles.starRow}>
-                  {"★".repeat(rev.rating).split("").map((s, sIdx) => (
-                    <span key={sIdx} className={styles.star}>★</span>
+                  {"ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦".repeat(rev.rating).split("").map((s, sIdx) => (
+                    <span key={sIdx} className={styles.star}>ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</span>
                   ))}
                 </div>
 
                 {/* Review Text */}
                 <blockquote className={styles.reviewText}>
-                  “ {rev.text} ”
+                  ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ {rev.text} ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â
                 </blockquote>
 
                 {/* Author Info block */}
@@ -111,7 +111,7 @@ export default function Testimonials() {
                   </div>
                   <div className={styles.authorMeta}>
                     <cite className={styles.authorName}>{rev.name}</cite>
-                    <span className={styles.authorRole}>{rev.role} • {rev.time}</span>
+                    <span className={styles.authorRole}>{rev.role} ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ {rev.time}</span>
                   </div>
                 </div>
               </div>

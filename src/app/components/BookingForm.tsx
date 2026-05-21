@@ -77,8 +77,8 @@ export default function BookingForm() {
 
   const getStylistName = (val: string) => {
     switch(val) {
-      case "ajay": return "Ajay (Master Stylist)";
-      case "nandini": return "Nandini (Nail Artisan)";
+      case "Alex": return "Alex (Master Stylist)";
+      case "Sophia": return "Sophia (Nail Artisan)";
       default: return "No Preference (First Available)";
     }
   };
@@ -92,7 +92,7 @@ export default function BookingForm() {
 
     const randomNum = Math.floor(1000 + Math.random() * 9000);
     const char = String.fromCharCode(65 + Math.floor(Math.random() * 26));
-    setTicketNumber(`SIT-${randomNum}${char}`);
+    setTicketNumber(`LUX-${randomNum}${char}`);
     setBookingSuccess(true);
     
     const section = document.getElementById("booking");
@@ -183,8 +183,8 @@ export default function BookingForm() {
                         className="glass-panel"
                       >
                         <option value="no-preference">No Preference (First Available)</option>
-                        <option value="nandini">Nandini (Nail Artisan)</option>
-                        <option value="ajay">Ajay (Master Stylist)</option>
+                        <option value="Sophia">Sophia (Nail Artisan)</option>
+                        <option value="Alex">Alex (Master Stylist)</option>
                       </select>
                     </div>
                   </div>
@@ -234,42 +234,9 @@ export default function BookingForm() {
                   <h4 className={styles.studioCardTitle}>Studio Location & Hours</h4>
                   
                   <div className={styles.contactList}>
-                    <div className={styles.contactItem}>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                      </svg>
-                      <div>
-                        <h5>Address</h5>
-                        <p>404, Gali Number 2, Raja Park, Jaipur, Rajasthan 302004</p>
-                      </div>
-                    </div>
 
-                    <div className={styles.contactItem}>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                      </svg>
-                      <div>
-                        <h5>Direct Call Hotline</h5>
-                        <p className={styles.directCall}>096644 71707</p>
-                      </div>
-                    </div>
 
-                    <div className={styles.contactItem}>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-                      </svg>
-                      <div>
-                        <h5>WhatsApp Support</h5>
-                        <a 
-                          href="https://wa.me/919664471707?text=Hi%20SIT%20Beauty%20Studio!%20I%20have%20a%20question%20about%20your%20services."
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={styles.whatsappFormLink}
-                        >
-                          Chat on WhatsApp
-                        </a>
-                      </div>
-                    </div>
+
 
                     <div className={styles.contactItem}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -278,13 +245,13 @@ export default function BookingForm() {
                       </svg>
                       <div>
                         <h5>Working Hours</h5>
-                        <p>Open Daily: 9:30 AM – 8:30 PM (Sundays Busy)</p>
+                        <p>Open Daily: 9:30 AM Ã¢â‚¬â€œ 8:30 PM (Sundays Busy)</p>
                       </div>
                     </div>
                   </div>
 
                   <div className={styles.cardFooter}>
-                    <span>SIT Beauty Studio • Raja Park</span>
+                    <span>Luxe Beauty Studio Ã¢â‚¬Â¢ Downtown Metro</span>
                   </div>
                 </div>
               </div>
@@ -302,7 +269,7 @@ export default function BookingForm() {
               <h3 className={styles.successTitle}>Reservation Requested</h3>
               <p className={styles.successSubtitle}>
                 Your styling experience request has been received. Present this digital ticket 
-                at our Raja Park salon reception.
+                at our Downtown Metro salon reception.
               </p>
             </div>
 
@@ -312,7 +279,7 @@ export default function BookingForm() {
               
               <div className={styles.ticketTop}>
                 <div>
-                  <span className={styles.ticketLogo}>SIT</span>
+                  <span className={styles.ticketLogo}>LUXE</span>
                   <span className={styles.ticketLogoSub}>BEAUTY STUDIO</span>
                 </div>
                 <div className={styles.ticketStatus}>CONFIRMED PASS</div>
@@ -356,7 +323,7 @@ export default function BookingForm() {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
-                  <span>404, Gali No. 2, Raja Park, Jaipur • 096644 71707</span>
+                  <span>Downtown Metro</span>
                 </div>
               </div>
             </div>
@@ -365,18 +332,7 @@ export default function BookingForm() {
               <button onClick={resetBooking} className="secondary-button">
                 BOOK ANOTHER SESSION
               </button>
-              <a 
-                href={`https://wa.me/919664471707?text=Hi%20SIT%20Beauty%20Studio!%20I%20just%20requested%20an%20appointment%20with%20Ticket%20Ref%20${ticketNumber}%20for%20${getServiceName(formData.service)}%20on%20${formData.date}%20at%20${formData.timeSlot}.%20Please%20confirm%20my%20slot!`}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="gold-button"
-                style={{ background: "#25D366", borderColor: "#25D366", display: "inline-flex", alignItems: "center", gap: "0.6rem" }}
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-                </svg>
-                Confirm on WhatsApp
-              </a>
+
             </div>
           </div>
         )}

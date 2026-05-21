@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className={styles.container}>
         {/* Elegant Logo */}
         <a href="#" className={styles.logoContainer} onClick={closeMobileMenu}>
-          <span className={styles.logoText}>SIT</span>
+          <span className={styles.logoText}>LUXE</span>
           <span className={styles.logoSubtitle}>BEAUTY STUDIO</span>
         </a>
 

@@ -28,27 +28,27 @@ export default function Services() {
     nails: [
       {
         name: "Couture Gel Extensions",
-        price: "₹1,999",
+        price: "â‚¹1,999",
         duration: "120 Mins",
-        description: "Full-set premium hard gel extensions crafted by Nandini. Choice of classic length, customized shaping, and a glossy, warp-free protective topcoat.",
+        description: "Full-set premium hard gel extensions crafted by Sophia. Choice of classic length, customized shaping, and a glossy, warp-free protective topcoat.",
         tag: "Highly Popular"
       },
       {
         name: "Custom Ombre & Glaze Overlays",
-        price: "₹1,499",
+        price: "â‚¹1,499",
         duration: "90 Mins",
         description: "Elegant pastel blends, milky white ombres, and chrome powders hand-rubbed for a high-gloss glazed donut luster.",
         tag: "Trending"
       },
       {
         name: "Signature French Overlay",
-        price: "₹1,299",
+        price: "â‚¹1,299",
         duration: "75 Mins",
         description: "Crisp white tips or soft pastel smiles over organic structural gel. A timeless look that lasts up to 4 weeks.",
       },
       {
         name: "Handpainted Art & Rhinestones",
-        price: "₹799",
+        price: "â‚¹799",
         duration: "45 Mins",
         description: "Detailed handpainted line art, abstract swirls, chrome accents, or 4 signature Swarovski crystals on custom accent nails.",
       }
@@ -56,54 +56,54 @@ export default function Services() {
     hair: [
       {
         name: "Signature Precision Cut & Blowout",
-        price: "₹999",
+        price: "â‚¹999",
         duration: "60 Mins",
-        description: "A tailored consultation followed by a precision haircut with master stylist Ajay. Includes a relaxing stress-relief wash and a signature blowout.",
-        tag: "Ajay's Specialty"
+        description: "A tailored consultation followed by a precision haircut with master stylist Alex. Includes a relaxing stress-relief wash and a signature blowout.",
+        tag: "Alex's Specialty"
       },
       {
         name: "Caramel Balayage & Color Melt",
-        price: "₹3,499",
+        price: "â‚¹3,499",
         duration: "180 Mins",
         description: "Bespoke handpainted lighteners melted into a glossy caramel chocolate gloss. Restores hydration and leaves hair incredibly shiny.",
         tag: "Signature Service"
       },
       {
         name: "Rejuvenating Keratin Infusion",
-        price: "₹2,999",
+        price: "â‚¹2,999",
         duration: "120 Mins",
         description: "Clinical-grade smoothing therapy designed to eliminate frizz and seal layers with botanical proteins. Lasts up to 3 months.",
       },
       {
         name: "Botanical Stress-Relief Scalp Ritual",
-        price: "₹1,499",
+        price: "â‚¹1,499",
         duration: "90 Mins",
-        description: "Ajay's deep-conditioning therapy using organic oils, steam infusion, and a 20-minute relaxing scalp, neck, and shoulder massage.",
+        description: "Alex's deep-conditioning therapy using organic oils, steam infusion, and a 20-minute relaxing scalp, neck, and shoulder massage.",
       }
     ],
     spa: [
       {
         name: "Pedicure Heaven (10-Step)",
-        price: "₹1,799",
+        price: "â‚¹1,799",
         duration: "120 Mins",
         description: "A 2-hour foot ritual involving 10 distinct layers of rich creams, clay masques, hot oils, and a therapeutic massage inside our Chesterfield basins.",
         tag: "Heavenly Experience"
       },
       {
         name: "Botanical Stress-Relief Therapy",
-        price: "₹1,299",
+        price: "â‚¹1,299",
         duration: "60 Mins",
         description: "A concentrated back, neck, and shoulder massage using warm organic herbal oils, targeting deep muscle stress.",
       },
       {
         name: "Brightening Botanical Facial",
-        price: "₹1,999",
+        price: "â‚¹1,999",
         duration: "75 Mins",
         description: "A customized facial using pure fruit enzymes, deep steam extraction, and a calming chilled rosewater hydration masque.",
       },
       {
         name: "Rose Petal Mani-Pedi Duo",
-        price: "₹2,499",
+        price: "â‚¹2,499",
         duration: "120 Mins",
         description: "A double ritual beginning with a warm milk soak, organic sugar exfoliation, fresh rose petals, and detailed nail grooming.",
       }

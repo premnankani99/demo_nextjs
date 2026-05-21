@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "./BeforeAfterSlider.module.css";
 
 export default function BeforeAfterSlider() {
-  const [sliderPosition, setSliderPosition] = useState<number>(50);
+  const [sliderposition, setSliderposition] = useState<number>(50);
   const [containerWidth, setContainerWidth] = useState<number>(500);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const isDragging = useRef<boolean>(false);
@@ -33,7 +33,7 @@ export default function BeforeAfterSlider() {
     const rect = containerRef.current.getBoundingClientRect();
     const x = clientX - rect.left;
     const position = Math.max(0, Math.min(100, (x / rect.width) * 100));
-    setSliderPosition(position);
+    setSliderposition(position);
   };
 
   const handleMouseDown = () => {
@@ -74,7 +74,7 @@ export default function BeforeAfterSlider() {
           <h2 className={styles.title}>The Art of the <span className="gold-text">Makeover</span></h2>
           <p className={styles.description}>
             Drag the divider to witness how we restore hydration, shine, and flawless color 
-            to dry hair, using signature structural glaze treatments at SIT Beauty Studio.
+            to dry hair, using signature structural glaze treatments at Luxe Beauty Studio.
           </p>
         </div>
 
@@ -86,12 +86,12 @@ export default function BeforeAfterSlider() {
           onTouchMove={handleTouchMove}
           onMouseDown={handleMouseDown}
           onTouchStart={handleMouseDown}
-          style={{ "--slider-pos": `${sliderPosition}%`, "--container-width": `${containerWidth}px` } as React.CSSProperties}
+          style={{ "--slider-pos": `${sliderposition}%`, "--container-width": `${containerWidth}px` } as React.CSSProperties}
         >
           {/* AFTER Image (Clean, Radiant Background) */}
           <div className={styles.imageContainer}>
             <Image 
-              src="/images/hair.png" 
+              src="/images/homepic.png" 
               alt="After treatment caramel hair transformation" 
               fill
               sizes="(max-width: 1024px) 100vw, 800px"
@@ -105,7 +105,7 @@ export default function BeforeAfterSlider() {
           <div className={`${styles.imageContainer} ${styles.beforeContainer}`}>
             <div className={styles.beforeImgWrapper}>
               <Image 
-                src="/images/hair.png" 
+                src="/images/homepic.png" 
                 alt="Before treatment dry hair transformation" 
                 fill
                 sizes="(max-width: 1024px) 100vw, 800px"
@@ -129,7 +129,7 @@ export default function BeforeAfterSlider() {
 
         {/* Dynamic Instructional Pill */}
         <div className={styles.tipRow}>
-          <span>← DRAG TO VISUALIZE →</span>
+          <span>ÃƒÂ¢Ã¢â‚¬Â Ã‚Â DRAG TO VISUALIZE ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</span>
         </div>
       </div>
     </section>

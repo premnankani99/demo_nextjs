@@ -10,27 +10,14 @@ export default function Footer() {
         {/* Left Column: Brand Statement & Map */}
         <div className={styles.brandColumn}>
           <div className={styles.brandHeader}>
-            <span className={styles.logoText}>SIT</span>
+            <span className={styles.logoText}>LUXE</span>
             <span className={styles.logoSub}>BEAUTY STUDIO</span>
           </div>
           <p className={styles.brandDesc}>
-            Jaipur’s premier beauty studio offering couture hair design, impeccable nail extensions, 
+            MetropolisÃ¢â‚¬â„¢s premier beauty studio offering couture hair design, impeccable nail extensions, 
             and restorative luxury treatments. We craft personalized ceremonies of self-care.
           </p>
 
-          {/* Interactive Google Map Embed */}
-          <div className={`${styles.mapContainer} gold-border`}>
-            <iframe
-              src="https://maps.google.com/maps?q=SIT%20Beauty%20Studio%20Raja%20Park%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="180"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="SIT Beauty Studio Google Maps Location"
-            ></iframe>
-          </div>
         </div>
 
         {/* Center Column: Quick Navigation Links */}
@@ -48,24 +35,13 @@ export default function Footer() {
 
         {/* Right Column: Contact Details */}
         <div className={styles.contactColumn}>
-          <h4 className={styles.colTitle}>Visit the Studio</h4>
+          <h4 className={styles.colTitle}>visit the Studio</h4>
           
-          <div className={styles.contactItem}>
-            <span className={styles.contactLabel}>STUDIO ADDRESS</span>
-            <p className={styles.contactText}>
-              404, Gali Number 2, Raja Park, <br />
-              Jaipur, Rajasthan 302004
-            </p>
-          </div>
 
-          <div className={styles.contactItem}>
-            <span className={styles.contactLabel}>HOTLINE RESERVATION</span>
-            <p className={styles.contactPhone}>096644 71707</p>
-          </div>
 
           <div className={styles.contactItem}>
             <span className={styles.contactLabel}>DAILY HOURS</span>
-            <p className={styles.contactText}>9:30 AM – 8:30 PM (Daily)</p>
+            <p className={styles.contactText}>9:30 AM Ã¢â‚¬â€œ 8:30 PM (Daily)</p>
           </div>
         </div>
 
@@ -74,9 +50,9 @@ export default function Footer() {
       {/* Copyright Bar */}
       <div className={styles.copyrightBar}>
         <div className={styles.copyrightContainer}>
-          <p>© {new Date().getFullYear()} SIT Beauty Studio. All Rights Reserved.</p>
+          <p>Ã‚Â© {new Date().getFullYear()} Luxe Beauty Studio. All Rights Reserved.</p>
           <p className={styles.designerCredit}>
-            Designed with <span className={styles.heart}>♥</span> for luxury & prestige
+            Designed with <span className={styles.heart}>Ã¢â„¢Â¥</span> for luxury & prestige
           </p>
         </div>
       </div>

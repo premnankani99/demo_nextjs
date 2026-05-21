@@ -13,25 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SIT Beauty Studio | Premium Salon & Nail Artistry, Raja Park, Jaipur",
-  description: "Experience absolute beauty at SIT Beauty Studio, Jaipur's premier 4.8★ rated salon in Raja Park. Specializing in flawless gel nail extensions, couture haircuts, rejuvenating spa pedicures, and stress-relief therapies. Request your premium booking today.",
+  title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, Downtown Metro",
+  description: "Experience absolute beauty at Luxe Beauty Studio, Metropolis's premier 4.8ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ rated salon in Downtown Metro. Specializing in flawless gel nail extensions, couture haircuts, rejuvenating spa pedicures, and stress-relief therapies. Request your premium booking today.",
   keywords: [
-    "SIT Beauty Studio",
-    "सित ब्यूटी स्टूडियो",
-    "salon in Raja Park Jaipur",
-    "best nail extensions Jaipur",
-    "Nandini nail extensions",
-    "Ajay haircut stylist Jaipur",
-    "luxury pedicure Raja Park",
-    "Jaipur beauty parlour reviews",
-    "SIT salon Jaipur"
+    "Luxe Beauty Studio",
+    "Luxe Beauty Studio",
+    "à¤²à¤•à¥à¤¸ à¤¬à¥à¤¯à¥‚à¤Ÿà¥€ à¤¸à¥à¤Ÿà¥‚à¤¡à¤¿à¤¯à¥‹",
+    "salon in Downtown Metro Metropolis",
+    "best nail extensions Metropolis",
+    "Sophia nail extensions",
+    "Alex haircut stylist Metropolis",
+    "luxury pedicure Downtown Metro",
+    "Metropolis beauty parlour reviews",
+    "Luxe salon Metropolis"
   ],
-  authors: [{ name: "SIT Beauty Studio" }],
+  authors: [{ name: "Luxe Beauty Studio" }],
   openGraph: {
-    title: "SIT Beauty Studio | Premium Salon & Nail Artistry, Raja Park, Jaipur",
-    description: "Welcome to Jaipur’s premier sanctuary for couture hair designs, elite nail artistry, and deeply restorative body spa therapies. Read our 379+ Google reviews and experience excellence.",
-    url: "https://sitbeautystudio.com",
-    siteName: "SIT Beauty Studio",
+    title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, Downtown Metro",
+    description: "Welcome to MetropolisÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s premier sanctuary for couture hair designs, elite nail artistry, and deeply restorative body spa therapies. Read our 379+ Google reviews and experience excellence.",
+    url: "https://luxebeautystudio.com",
+    siteName: "Luxe Beauty Studio",
     locale: "en_IN",
     type: "website",
   },

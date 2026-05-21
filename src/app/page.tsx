@@ -5,11 +5,9 @@ import Gallery from "./components/Gallery";
 import Services from "./components/Services";
 import BeforeAfterSlider from "./components/BeforeAfterSlider";
 import VibeQuiz from "./components/VibeQuiz";
-import Testimonials from "./components/Testimonials";
+
 import BookingForm from "./components/BookingForm";
 import Footer from "./components/Footer";
-import WhatsAppFloating from "./components/WhatsAppFloating";
-
 export default function Home() {
   return (
     <>
@@ -36,8 +34,6 @@ export default function Home() {
         {/* Dynamic VIBE-MATCH Quiz finder */}
         <VibeQuiz />
 
-        {/* Real Google Maps reviews slider */}
-        <Testimonials />
 
         {/* Premium Reservation Form Panel */}
         <BookingForm />
@@ -46,8 +42,6 @@ export default function Home() {
       {/* Footer & Live Maps location */}
       <Footer />
 
-      {/* Pulsing Floating WhatsApp support hotline */}
-      <WhatsAppFloating />
     </>
   );
 }

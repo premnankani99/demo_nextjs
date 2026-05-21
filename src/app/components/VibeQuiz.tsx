@@ -103,7 +103,7 @@ export default function VibeQuiz() {
       spa: prev.spa + points.spa
     }));
 
-    // Transition state
+    // transition state
     if (currentQIndex < questions.length - 1) {
       setCurrentQIndex((prev) => prev + 1);
       setSelectedChoiceIdx(null);
@@ -120,21 +120,21 @@ export default function VibeQuiz() {
       return {
         title: "The Glamour Icon",
         package: "Couture Gel Extensions & Custom Art",
-        description: "You thrive on meticulous details and view beauty as a bold form of self-expression. You deserve custom gel extensions layered with exquisite chrome glazes and Swarovski crystals hand-sculpted by Nandini.",
+        description: "You thrive on meticulous details and view beauty as a bold form of self-expression. You deserve custom gel extensions layered with exquisite chrome glazes and Swarovski crystals hand-sculpted by Sophia.",
         treatments: ["Couture Gel Extensions (120 Mins)", "Custom Ombre & Chrome Glaze (90 Mins)"]
       };
     } else if (maxVal === hair) {
       return {
         title: "The Timeless Royal",
         package: "Signature Precision Cut & Caramel Balayage",
-        description: "You appreciate classic structures combined with high-fashion textures. You deserve a precision haircut and caramel balayage melt by Ajay, restoring glossy layers and vibrant bounce to your hair.",
+        description: "You appreciate classic structures combined with high-fashion textures. You deserve a precision haircut and caramel balayage melt by Alex, restoring glossy layers and vibrant bounce to your hair.",
         treatments: ["Signature Cut & Blowout (60 Mins)", "Caramel Balayage Melt (180 Mins)"]
       };
     } else {
       return {
         title: "The Zen Indulgent",
         package: "10-Step Pedicure Heaven & Scalp Ritual",
-        description: "Your priority is sensory renewal, quiet solitude, and physical decompression. Treat yourself to our legendary 10-step pedicure heaven in our black tufted leather Chesterfield armchairs, paired with Ajay's botanical scalp spa.",
+        description: "Your priority is sensory renewal, quiet solitude, and physical decompression. Treat yourself to our legendary 10-step pedicure heaven in our black tufted leather Chesterfield armchairs, paired with Alex's botanical scalp spa.",
         treatments: ["Pedicure Heaven (120 Mins)", "Botanical Scalp Spa & Massage (90 Mins)"]
       };
     }

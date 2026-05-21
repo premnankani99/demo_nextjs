@@ -17,7 +17,7 @@ export default function Philosophy() {
               <div className={styles.imageWrapper}>
                 <Image 
                   src="/images/station.png" 
-                  alt="SIT Beauty Studio Styling Stations"
+                  alt="Luxe Beauty Studio Styling Stations"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className={styles.image}
@@ -35,7 +35,7 @@ export default function Philosophy() {
               <div className={styles.imageWrapper}>
                 <Image 
                   src="/images/lounge.png" 
-                  alt="SIT Beauty Studio Pedicure Lounge"
+                  alt="Luxe Beauty Studio Pedicure Lounge"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className={styles.image}
@@ -52,12 +52,12 @@ export default function Philosophy() {
 
         {/* Right Column: Original Editorial Philosophy & Checklist */}
         <div className={styles.copyColumn}>
-          <span className={styles.subtitle}>ABOUT SIT BEAUTY STUDIO</span>
+          <span className={styles.subtitle}>ABOUT Luxe Beauty Studio</span>
           <h2 className={styles.title}>Luxury & <span className="gold-text">Clinical Hygiene</span></h2>
           
           <p className={styles.introParagraph}>
-            At SIT Beauty Studio, we believe self-care is a sacred ceremony, not a checklist. 
-            Located in the heart of Raja Park, Jaipur, our boutique space is bathed in warm, airy 
+            At Luxe Beauty Studio, we believe self-care is a sacred ceremony, not a checklist. 
+            Located in the heart of Downtown Metro, our boutique space is bathed in warm, airy 
             light and tailored to offer a peaceful detach from the city's busy noise.
           </p>
           
@@ -89,7 +89,7 @@ export default function Philosophy() {
                 </svg>
               </div>
               <div className={styles.checkContent}>
-                <h4>Artisan Hair Couture by Ajay</h4>
+                <h4>Artisan Hair Couture by Alex</h4>
                 <p>Signature custom styling, precision hair coloring, and relaxing hot-oil hair rituals.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Philosophy() {
                 </svg>
               </div>
               <div className={styles.checkContent}>
-                <h4>Nail Art & Extensions by Nandini</h4>
+                <h4>Nail Art & Extensions by Sophia</h4>
                 <p>Highly neat, flawless gel extensions, detailed ombre overlays, and custom gems.</p>
               </div>
             </div>

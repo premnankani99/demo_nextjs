@@ -14,43 +14,43 @@ interface GalleryItem {
 export default function Gallery() {
   const galleryItems: GalleryItem[] = [
     {
-      src: "/images/interior.png",
-      alt: "SIT Beauty Studio Turquoise Reception Counter",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio Turquoise Reception Counter",
       tag: "THE STUDIO SPACE",
       title: "Turquoise Slatted Lobby",
       desc: "Our vibrant signature teal reception lounge crafted with modern slatted wood paneling, circular backlit branding, and warm spotlighting."
     },
     {
-      src: "/images/station.png",
-      alt: "SIT Beauty Studio Arched Backlit mirrors",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio Arched Backlit mirrors",
       tag: "styling stations",
       title: "Arched Vanity Mirrors",
       desc: "A bright row of warm LED-backlit arched mirror systems and clean clinical vanity drawers for hair colorings and precision cuts."
     },
     {
-      src: "/images/lounge.png",
-      alt: "SIT Beauty Studio Chesterfield Pedicure armchairs",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio Chesterfield Pedicure armchairs",
       tag: "pedicure lounge",
       title: "Chesterfield Spa Armchairs",
       desc: "Luxury deep-quilted black leather Chesterfield armchairs overlooking custom black tufted pedicure wash basins."
     },
     {
-      src: "/images/nails.png",
-      alt: "SIT Beauty Studio Elite gel extensions work",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio Elite gel extensions work",
       tag: "artisan nails",
       title: "Couture Gel Extensions",
-      desc: "Immaculate pastel pink gel overlays, hand-sculpted rhinestone attachments, and abstract line art made by Nandini."
+      desc: "Immaculate pastel pink gel overlays, hand-sculpted rhinestone attachments, and abstract line art made by Sophia."
     },
     {
-      src: "/images/hair.png",
-      alt: "SIT Beauty Studio Caramel color melt hair work",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio Caramel color melt hair work",
       tag: "hair couture",
       title: "Chocolate Caramel Balayage",
-      desc: "Precision custom lighteners melted into signature chocolate caramel layers and finished with a voluminous blowout by Ajay."
+      desc: "Precision custom lighteners melted into signature chocolate caramel layers and finished with a voluminous blowout by Alex."
     },
     {
-      src: "/images/pedicure.png",
-      alt: "SIT Beauty Studio copper pedicure setup with marigolds",
+      src: "/images/homepic.png",
+      alt: "Luxe Beauty Studio copper pedicure setup with marigolds",
       tag: "sensory therapies",
       title: "Rose Petal Copper Soak",
       desc: "Hammered antique-copper pedicure baths filled with warm milk, Epsom mineral salts, and fresh marigold petals."
@@ -65,7 +65,7 @@ export default function Gallery() {
           <span className={styles.subtitle}>STUDIO GALLERY & WORK</span>
           <h2 className={styles.title}>Visualizing the <span className="gold-text">Prestige</span></h2>
           <p className={styles.description}>
-            A curated lookbook showcasing our clinical, sun-drenched Raja Park interiors and the 
+            A curated lookbook showcasing our clinical, sun-drenched Downtown Metro interiors and the 
             exquisite hair, nail, and pedicure treatments crafted by our resident artists.
           </p>
         </div>
