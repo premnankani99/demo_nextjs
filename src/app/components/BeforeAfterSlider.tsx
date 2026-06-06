@@ -128,8 +128,8 @@ export default function BeforeAfterSlider() {
         </div>
 
         {/* Dynamic Instructional Pill */}
-        <div className={styles.tipRow}>
-          <span>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â DRAG TO VISUALIZE ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢</span>
+        <div className={styles.dragHint}>
+          <span>← DRAG TO VISUALIZE →</span>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export default function Hero() {
         {/* Left Column: Spacious Editorial Content */}
         <div className={`${styles.textContent} fade-in`}>
           <div className={styles.taglineRow}>
-            <span className={styles.goldBadge}>Luxe Beauty Studio ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Lajpat Nagar, Delhi</span>
+            <span className={styles.goldBadge}>Luxe Beauty Studio • C-Scheme, Jaipur</span>
           </div>
           
           <h1 className={styles.title}>
@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Welcome to New DelhiÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢s sun-drenched sanctuary for exquisite bridal makeup, flawless custom nail art, and deeply restorative spa rituals.
+            Welcome to Jaipur's most exclusive sanctuary for exquisite bridal makeup, flawless custom nail artistry, and deeply restorative spa rituals tailored for the modern royal.
           </p>
 
           <div className={styles.ctas}>

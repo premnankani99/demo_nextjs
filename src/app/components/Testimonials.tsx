@@ -75,15 +75,15 @@ export default function Testimonials() {
           <span className={styles.subtitle}>GUEST VOICES</span>
           <h2 className={styles.title}>Beloved by Our <span className="gold-text">Guests</span></h2>
           <p className={styles.description}>
-            With an overall rating of 4.8ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ and over 379 detailed reviews, we pride ourselves on 
-            creating memorable luxury experiences for every guest in New Delhi.
+            With an overall rating of 4.8★ and over 379 detailed reviews, we pride ourselves on 
+            creating memorable luxury experiences for every guest in Jaipur.
           </p>
         </div>
 
         {/* Carousel Window */}
         <div className={`${styles.carouselWrapper} glass-panel`}>
           {/* Giant decorative quotation mark */}
-          <div className={styles.quoteIcon}>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“</div>
+          <div className={styles.quoteIcon}>"</div>
 
           {/* Cards Frame */}
           <div className={styles.carouselTrack}>
@@ -94,14 +94,14 @@ export default function Testimonials() {
               >
                 {/* 5-Star Row */}
                 <div className={styles.starRow}>
-                  {"ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦".repeat(rev.rating).split("").map((s, sIdx) => (
-                    <span key={sIdx} className={styles.star}>ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</span>
+                  {"★".repeat(rev.rating).split("").map((s, sIdx) => (
+                    <span key={sIdx} className={styles.star}>★</span>
                   ))}
                 </div>
 
                 {/* Review Text */}
                 <blockquote className={styles.reviewText}>
-                  ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ {rev.text} ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â
+                  " {rev.text} "
                 </blockquote>
 
                 {/* Author Info block */}
@@ -111,7 +111,7 @@ export default function Testimonials() {
                   </div>
                   <div className={styles.authorMeta}>
                     <cite className={styles.authorName}>{rev.name}</cite>
-                    <span className={styles.authorRole}>{rev.role} ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ {rev.time}</span>
+                    <span className={styles.authorRole}>{rev.role} • {rev.time}</span>
                   </div>
                 </div>
               </div>

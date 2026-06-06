@@ -118,6 +118,7 @@ html, body {
 @keyframes button-pulse {
   0% { box-shadow: 0 4px 15px rgba(225, 29, 72, 0.15); transform: scale(1); }
   100% { box-shadow: 0 4px 25px rgba(225, 29, 72, 0.4); transform: scale(1.02); }
+}
 
 .gold-button::before {
   content: '';

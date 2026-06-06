@@ -251,13 +251,13 @@ export default function BookingForm() {
                       </svg>
                       <div>
                         <h5>Working Hours</h5>
-                        <p>Open Daily: 9:30 AM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ 8:30 PM (Sundays Busy)</p>
+                        <p>Open Daily: 9:30 AM — 8:30 PM (Sundays Busy)</p>
                       </div>
                     </div>
                   </div>
 
                   <div className={styles.cardFooter}>
-                    <span>Luxe Beauty Studio ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ Lajpat Nagar, Delhi</span>
+                    <span>Luxe Beauty Studio • C-Scheme, Jaipur</span>
                   </div>
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function BookingForm() {
               <h3 className={styles.successTitle}>Reservation Requested</h3>
               <p className={styles.successSubtitle}>
                 Your styling experience request has been received. Present this digital ticket 
-                at our Lajpat Nagar, Delhi salon reception.
+                at our C-Scheme, Jaipur salon reception.
               </p>
             </div>
 
@@ -329,7 +329,7 @@ export default function BookingForm() {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
-                  <span>Lajpat Nagar, Delhi</span>
+                  <span>C-Scheme, Jaipur</span>
                 </div>
               </div>
             </div>

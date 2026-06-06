@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, Lajpat Nagar, Delhi",
-  description: "Experience absolute beauty at Luxe Beauty Studio, New Delhi's premier salon in Lajpat Nagar, Delhi. Specializing in flawless gel nail extensions, couture haircuts, rejuvenating spa pedicures, and stress-relief therapies. Request your premium booking today.",
+  title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, C-Scheme, Jaipur",
+  description: "Experience absolute beauty at Luxe Beauty Studio, Jaipur's premier salon in C-Scheme. Specializing in flawless gel nail extensions, couture haircuts, rejuvenating spa pedicures, and stress-relief therapies. Request your premium booking today.",
   keywords: [
     "Luxe Beauty Studio",
-    "Luxe Beauty Studio",
-    "ÃƒÂ Ã‚Â¤Ã‚Â²ÃƒÂ Ã‚Â¤Ã¢â‚¬Â¢ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¸ ÃƒÂ Ã‚Â¤Ã‚Â¬ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¥Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã…Â¸ÃƒÂ Ã‚Â¥Ã¢â€šÂ¬ ÃƒÂ Ã‚Â¤Ã‚Â¸ÃƒÂ Ã‚Â¥Ã‚ÂÃƒÂ Ã‚Â¤Ã…Â¸ÃƒÂ Ã‚Â¥Ã¢â‚¬Å¡ÃƒÂ Ã‚Â¤Ã‚Â¡ÃƒÂ Ã‚Â¤Ã‚Â¿ÃƒÂ Ã‚Â¤Ã‚Â¯ÃƒÂ Ã‚Â¥Ã¢â‚¬Â¹",
-    "salon in Lajpat Nagar, Delhi New Delhi",
-    "best nail extensions New Delhi",
+    "Luxe Beauty Studio Jaipur",
+    "best salon in C-Scheme, Jaipur",
+    "salon in Jaipur",
+    "best nail extensions Jaipur",
     "Sophia nail extensions",
-    "Alex haircut stylist New Delhi",
-    "luxury pedicure Lajpat Nagar, Delhi",
-    "New Delhi beauty parlour reviews",
-    "Luxe salon New Delhi"
+    "Alex haircut stylist Jaipur",
+    "luxury pedicure C-Scheme, Jaipur",
+    "Jaipur beauty parlour reviews",
+    "Luxe salon Jaipur"
   ],
   authors: [{ name: "Luxe Beauty Studio" }],
   openGraph: {
-    title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, Lajpat Nagar, Delhi",
-    description: "Welcome to New DelhiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢s premier sanctuary for couture hair designs, elite nail artistry, and deeply restorative body spa therapies. Read our 379+ Google reviews and experience excellence.",
+    title: "Luxe Beauty Studio | Premium Salon & Nail Artistry, C-Scheme, Jaipur",
+    description: "Welcome to Jaipur's premier sanctuary for couture hair designs, elite nail artistry, and deeply restorative body spa therapies. Read our 379+ Google reviews and experience excellence.",
     url: "https://luxebeautystudio.com",
     siteName: "Luxe Beauty Studio",
     locale: "en_IN",

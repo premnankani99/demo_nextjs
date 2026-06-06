@@ -14,7 +14,7 @@ export default function Footer() {
             <span className={styles.logoSub}>BEAUTY STUDIO</span>
           </div>
           <p className={styles.brandDesc}>
-            New DelhiÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s premier beauty studio offering couture hair design, impeccable nail extensions, 
+            Jaipur's premier beauty studio offering couture hair design, impeccable nail extensions, 
             and restorative luxury treatments. We craft personalized ceremonies of self-care.
           </p>
 
@@ -35,13 +35,16 @@ export default function Footer() {
 
         {/* Right Column: Contact Details */}
         <div className={styles.contactColumn}>
-          <h4 className={styles.colTitle}>visit the Studio</h4>
+          <h4 className={styles.colTitle}>Visit the Studio</h4>
           
-
+          <div className={styles.contactItem}>
+            <span className={styles.contactLabel}>LOCATION</span>
+            <p className={styles.contactText}>C-Scheme, Jaipur</p>
+          </div>
 
           <div className={styles.contactItem}>
             <span className={styles.contactLabel}>DAILY HOURS</span>
-            <p className={styles.contactText}>9:30 AM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ 8:30 PM (Daily)</p>
+            <p className={styles.contactText}>9:30 AM — 8:30 PM (Daily)</p>
           </div>
         </div>
 
@@ -50,9 +53,9 @@ export default function Footer() {
       {/* Copyright Bar */}
       <div className={styles.copyrightBar}>
         <div className={styles.copyrightContainer}>
-          <p>ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© {new Date().getFullYear()} Luxe Beauty Studio. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Luxe Beauty Studio. All Rights Reserved.</p>
           <p className={styles.designerCredit}>
-            Designed with <span className={styles.heart}>ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢Ãƒâ€šÃ‚Â¥</span> for luxury & prestige
+            Designed with <span className={styles.heart}>♥</span> for luxury & prestige
           </p>
         </div>
       </div>
